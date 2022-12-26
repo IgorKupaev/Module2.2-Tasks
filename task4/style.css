@@ -1,4 +1,4 @@
-*, *::before, *::after {
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -7,10 +7,10 @@
   width: 100%;
   height: 100vh;
 }
-.main__container {
+.mainContainer {
   width: 100%;
 }
-.weather__items {
+.weatherItems {
   padding: 5px;
   margin: 0 auto;
   display: flex;
@@ -18,7 +18,7 @@
   flex-wrap: wrap;
   align-items: center;
 }
-.weather__column {
+.weatherColumn {
   flex: 0 0 300px;
   padding: 5px 5px;
   display: flex;
@@ -26,14 +26,14 @@
   align-items: center;
   transition: all .3s ease;
 }
-.weather__column:hover {
+.weatherColumn:hover {
   box-shadow: 2px 2px 5px #000, -2px -2px 5px #000;
 }
 .weather-item {
   height: 100%;
   width: 100%;
 }
-.weather-item__date {
+.weather-itemDate {
   color: #fff;
   background-color: rgb(49, 114, 138);
   min-width: 100%;
@@ -41,8 +41,9 @@
   font-weight: bold;
   text-align: center;
   padding: 10px;
+  user-select: none;
 }
-.weather-item__status {
+.weather-itemStatus {
   width: 100%;
   min-height: 170px;
   display: flex;
@@ -50,15 +51,16 @@
   align-items: center;
   padding: 20px 0 50px 0;
 }
-.weather-item__img {
+.weather-itemImg {
   background-color: rgba(230, 177, 4, 0.838);
   width: 170px;
   height: 170px;
   border-radius: 100%;
 
 }
-.weather-item__value {
+.weather-itemValue {
   font-size: 38px;
   font-weight: bold;
   text-align: center;
+  user-select: none;
 }
