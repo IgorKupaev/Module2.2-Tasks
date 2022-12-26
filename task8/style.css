@@ -27,12 +27,12 @@
   flex: 0 0 13vw;
 }
 .price-listColumn:first-child {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
 }
 .price-listColumn:last-child {
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 .price-listColumn:not(:last-child) {
   border-right: 1px solid rgb(160, 160, 160);
