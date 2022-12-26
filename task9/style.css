@@ -1,14 +1,15 @@
-*, *::before, *::after {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  user-select: none;
 }
-.main__container {
+.mainContainer {
   max-width: 976px;
   margin: 0 auto;
   position: relative;
 }
-.main__title {
+.mainTitle {
   font-weight: 700;
   font-size: 36px;
   margin: 40px auto 0;
@@ -16,22 +17,22 @@
   color: rgb(0, 69, 190);
   text-align: center;
 }
-.main__picture {
+.mainPicture {
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   margin: 40px auto 0;
 }
-.main__picture svg {
+.mainPicture svg {
   fill: #fff
 }
-.main__picture img {
+.mainPicture img {
   border-radius: 100%;
   max-width: 854px;
   max-height: 854px;
 }
-.main__items {
+.mainItems {
   z-index: 2;
   margin-top: -289px;
   display: flex;
@@ -39,7 +40,7 @@
   align-items: center;
   flex-wrap: wrap;
 }
-.main__column {
+.mainColumn {
   background-color: #fff;
   margin-top: 50px;
   flex: 0 1 292px;
@@ -50,7 +51,7 @@
 .main-item >*:not(:last-child) {
   margin-bottom: 20px;
 }
-.main-item__picture {
+.main-itemPicture {
   width: 76px;
   height: 76px;
   margin: 20px 0 0;
@@ -61,63 +62,63 @@
   justify-content: center;
   align-items: center;
 }
-.main-item__picture img {
+.main-itemPicture img {
   width: 55px;
 }
-.main-item__title {
+.main-itemTitle {
   text-transform: uppercase;
   font-family: Roboto, sans-serif;
   font-size: 24px;
 }
-.main-item__description {
+.main-itemDescription {
   font-family: "Open Sans", sans-serif;
   line-height: 1.6;
 }
 @media (max-width: 1039px) {
-  .main__title {
+  .mainTitle {
     font-size: 24px;
   }
-  .main__picture img {
+  .mainPicture img {
     max-width: 714px;
     max-height: 714px;
   }
-  .main__column {
+  .mainColumn {
     flex: 0 1 335px;
     margin-right: 50px;
   }
-  .main__items {
+  .mainItems {
     justify-content: center;
     margin-top: -150px;
   }
 }
 @media (max-width: 819px) {
-  .main__title {
+  .mainTitle {
     max-width: 401px;
   }
-  .main__picture img {
+  .mainPicture img {
     max-width: 531px;
     max-height: 531px;
   }
-  .main__column {
+  .mainColumn {
     flex: 0 1 255px;
     margin-right: 30px;
   }
 }
 @media (max-width: 639px) {
-  .main__title {
+  .mainTitle {
     font-size: 18px;
     max-width: 320px;
   }
-  .main__picture img {
+  .mainPicture img {
     max-width: 379px;
     max-height: 379px;
   }
-  .main__column {
+  .mainColumn {
     flex: 1 0 340px;
     margin-right: 50px;
     margin-left: 50px;
   }
-  .main__items {
+  .mainItems {
     justify-content: center;
     margin-top: -100px;
   }
