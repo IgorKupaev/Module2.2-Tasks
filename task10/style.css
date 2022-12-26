@@ -105,7 +105,7 @@ body {
 .pic-left img {
   object-position: -20px -20px;
 }
-@media (max-width: 1180px) {
+@media (max-width: 1199px) {
   .pizza-itemPicture {
     max-height: 249px;
     flex: 0 0 155px;
@@ -120,17 +120,14 @@ body {
   .pic-left img {
     object-position: -60px -20px;
   }
-}
-@media (max-width: 1039px) {
   .title-block {
-    max-width: 720px;
     margin: 0 auto;
   }
-  .pizzaItems {
-    width: 940px;
-  }
 }
-@media (max-width: 969px) {
+@media (max-width: 991px) {
+  .title-block {
+    max-width: 720px;
+  }
   .pizza-itemPicture {
     max-height: 249px;
     min-width: 300px;
@@ -140,8 +137,7 @@ body {
     width: auto;
   }
   .pizzaColumn {
-    flex: 1 1 auto;
-    margin: 0 30px 30px 30px;
+    flex: 0 1 720px;
   }
   .pizzaColumn:first-child {
     margin-top: 30px;
@@ -159,7 +155,24 @@ body {
     object-position: 0px -20px;
   }
 }
-@media (max-width: 639px) {
+@media (max-width: 767px) {
+  .title-block {
+    max-width: 540px;
+  }
+  .pizzaColumn {
+    flex: 0 1 510px;
+  }
+  .pizza-itemPicture {
+    max-height: 249px;
+    min-width: 245px;
+    overflow: hidden;
+  }
+  .pizza-itemPicture img {
+    object-position: -30px -10px;
+    max-height: 249px;
+  }
+}
+@media (max-width: 575px) {
   .title-blockTitle {
     font-size: 30px;
   }
@@ -181,6 +194,7 @@ body {
   .pizzaColumn {
     padding: 30px 20px;
     max-width: 300px;
+    margin-right: 0;
   }
   .pizza-itemPicture {
     overflow: visible;
