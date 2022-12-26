@@ -1,4 +1,4 @@
-*, *::after, *::before {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -7,7 +7,7 @@
   width: 100%;
   height: 100vh;
 }
-.main__container {
+.mainContainer {
   width: 100%;
 }
 .feed-back {
@@ -20,7 +20,7 @@
 .feed-back:hover {
   margin-left: 0;
 }
-.feed-back__container {
+.feed-backContainer {
   background-color: rgba(34, 34, 34, 0.87);
   max-width: 400px;
   display: flex;
@@ -28,20 +28,20 @@
   cursor: pointer;
     
 }
-.feed-back__content {
+.feed-backContent {
   display: flex;
   align-items: center;
   padding: 0 8px;
 }
-.feed-back__picture {
+.feed-backPicture {
   margin: 12.875px 8px 12.875px 0;
 }
-.feed-back__img {
+.feed-backImg {
   height: 100px;
   width: 90px;
   background-color: antiquewhite;
 }
-.feed-back__description {
+.feed-backDescription {
   font-size: 16px;
   color: #fff;
   width: 100%;
@@ -49,7 +49,7 @@
   display: flex;
   align-items: center;
 }
-.feed-back__button {
+.feed-backButton {
   background-color: gold;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
