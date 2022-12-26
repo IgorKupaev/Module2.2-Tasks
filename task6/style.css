@@ -1,4 +1,4 @@
-*, *::before, *::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: 0;
@@ -7,7 +7,7 @@
   width: 100%;
   height: 100vh;
 }
-.main__container {
+.mainContainer {
   width: 100%;
 }
 .pages {
@@ -15,20 +15,20 @@
   padding: 5px;
   width: 700px;
 }
-.pages__container {
+.pagesContainer {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
 }
-.pages__line {
+.pagesLine {
   position: absolute;
   width: 100%;
   height: 8px;
   background-color: rgb(177, 177, 177);
 }
-.pages__item {
+.pagesItem {
   z-index: 2;
   width: 70px;
   height: 70px;
@@ -40,10 +40,10 @@
   color: #fff;
   font-size: 25px;
 }
-.pages__item-purple {
+.pagesItem-purple {
   background-color: rgb(160, 0, 160);
 }
-.pages__item-gray {
+.pagesItem-gray {
   background-color: rgb(177, 177, 177);
   color: #000;
 }
