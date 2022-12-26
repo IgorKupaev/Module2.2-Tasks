@@ -1,4 +1,4 @@
-*, *::before, *::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,10 +7,10 @@
   width: 100%;
   height: 100vh;
 }
-.main__container {
+.mainContainer {
   width: 100%;
 }
-.batteries__container {
+.batteriesContainer {
   width: 100%;
   padding: 15px;
   display: flex;
@@ -18,7 +18,7 @@
   align-items: center;
   flex-direction: column;
 }
-.batteries__battery:not(:last-child) {
+.batteriesBattery:not(:last-child) {
   margin-bottom: 20px;
 }
 .battery {
@@ -29,22 +29,22 @@
   justify-content: space-between;
   align-items: center;
 }
-.battery_red .battery__fuel {
+.battery_red .batteryFuel {
   background-color: rgb(222, 0, 0);
   width: 33%;
 }
-.battery_yellow .battery__fuel {
+.battery_yellow .batteryFuel {
   background-color: rgb(255, 238, 2);
   width: 66%;
 }
-.battery_green .battery__fuel {
+.battery_green .batteryFuel {
   background-color: rgb(0, 156, 10);
   width: 100%;
 }
-.battery__fuel {
+.batteryFuel {
   height: 100%;
 }
-.battery__item {
+.batteryItem {
   height: 5.33vw;
   width: 2vw;
   background-color: #000;
