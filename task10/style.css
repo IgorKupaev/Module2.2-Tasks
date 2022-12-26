@@ -11,30 +11,30 @@ body {
   width: 100%;
   padding-top: 30px;
 }
-.main__container {
+.mainContainer {
   width: 100%;
 }
-.main__title-block {
+.mainTitle-block {
   margin: 0px auto;
 }
 .title-block {
   max-width: 793px;
 }
-.title-block__title {
+.title-blockTitle {
   text-align: center;
   color: rgb(241, 44, 14);
   font-family: Oswald, sans-serif;
   font-size: 60px;
   margin-bottom: 20px;
 }
-.title-block__description {
+.title-blockDescription {
   text-align: center;
   color: rgb(17, 17, 17);
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-style: italic;
 }
-.pizza__items {
+.pizzaItems {
   max-width: 1170px;
   margin: 0 auto;
   display: flex;
@@ -42,7 +42,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
-.pizza__column {
+.pizzaColumn {
   margin-top: 30px;
   width: 525px;
   background-color: #fff;
@@ -52,42 +52,42 @@ body {
 .pizza-item {
   display: flex;
 }
-.pizza-item__picture {
+.pizza-itemPicture {
   max-height: 249px;
   max-width: 255px;
   flex: 0 0 50%;
   overflow: hidden;
 }
-.pizza-item__picture img {
+.pizza-itemPicture img {
   max-height: 269px;
   vertical-align: center;
   object-position: -40px -10px;
   -webkit-user-drag: none;
 }
-.pizza-item__body {
+.pizza-itemBody {
   padding: 0 25px;
   flex: 0 1 50%;
 }
-.pizza-item__body >* {
+.pizza-itemBody >* {
   margin-top: 20px;
   max-width: 220px;
 }
-.pizza-item__title {
+.pizza-itemTitle {
   font-family: Oswald, sans-serif;
   font-size: 30px;
 }
-.pizza-item__description {
+.pizza-itemDescription {
   font-family: "Open Sans", sans-serif;
   font-style: italic;
   font-size: 16px;
 }
-.pizza-item__price {
+.pizza-itemPrice {
   color: rgb(241, 44, 14);
   font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 18px;
 }
-.pizza-item__button button {
+.pizza-itemButton button {
   background-color: rgb(226, 226, 226);
   color: rgb(17, 17, 17);
   font-family: "Open Sans", sans-serif;
@@ -99,22 +99,22 @@ body {
   transition: all .2s ease;
   text-transform: uppercase;
 }
-.pizza-item__button button:hover {
+.pizza-itemButton button:hover {
   background-color: rgb(207, 207, 207);
 }
 .pic-left img {
   object-position: -20px -20px;
 }
 @media (max-width: 1180px) {
-  .pizza-item__picture {
+  .pizza-itemPicture {
     max-height: 249px;
     flex: 0 0 155px;
     overflow: hidden;
   }
-  .pizza__column {
+  .pizzaColumn {
     width: 425px;
   }
-  .pizza-item__picture img {
+  .pizza-itemPicture img {
     object-position: -90px -10px;
   }
   .pic-left img {
@@ -126,33 +126,33 @@ body {
     max-width: 720px;
     margin: 0 auto;
   }
-  .pizza__items {
+  .pizzaItems {
     width: 940px;
   }
 }
 @media (max-width: 969px) {
-  .pizza-item__picture {
+  .pizza-itemPicture {
     max-height: 249px;
     min-width: 300px;
     overflow: hidden;
   }
-  .pizza__items {
+  .pizzaItems {
     width: auto;
   }
-  .pizza__column {
+  .pizzaColumn {
     flex: 1 1 auto;
     margin: 0 30px 30px 30px;
   }
-  .pizza__column:first-child {
+  .pizzaColumn:first-child {
     margin-top: 30px;
   }
-  .pizza-item__picture img {
+  .pizza-itemPicture img {
     object-position: -40px -20px;
   }
   .pizza-item {
     justify-content: space-between;
   }
-  .pizza-item__picture img {
+  .pizza-itemPicture img {
     max-height: 300px;
   }
   .pic-left img {
@@ -160,7 +160,7 @@ body {
   }
 }
 @media (max-width: 639px) {
-  .title-block__title {
+  .title-blockTitle {
     font-size: 30px;
   }
   .title-block {
@@ -169,20 +169,20 @@ body {
   .pizza-item {
     flex-direction: column;
   }
-  .pizza-item__picture {
+  .pizza-itemPicture {
     width: 300px;
       height: 200px;
   }
-  .pizza-item__picture img {
+  .pizza-itemPicture img {
     object-position: 0 0;
     width: 300px;
     height: 200px;
   }
-  .pizza__column {
+  .pizzaColumn {
     padding: 30px 20px;
     max-width: 300px;
   }
-  .pizza-item__picture {
+  .pizza-itemPicture {
     overflow: visible;
   }
 }
