@@ -6,7 +6,6 @@
   padding: 5px 15px;
   transition: all .2s ease;
 }
-
 .custom-button:hover {
   color: rgb(147, 3, 3);
   box-shadow: 0 0 2px #000;
