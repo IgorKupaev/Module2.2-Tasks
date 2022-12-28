@@ -125,7 +125,7 @@ img {
     max-width: 540px;
   }
   .main {
-    background: url('images/background.jpg') -500px 0/cover no-repeat;
+    background: url('images/background.jpg') -700px 0/cover no-repeat;
   }
 }
 @media (max-width: 575px) {
@@ -141,5 +141,8 @@ img {
   }
   .mainColumn:not(:first-child) {
     margin-top: 30px;
+  }
+  .main {
+    background: url('images/background.jpg') -1150px 0/cover no-repeat;
   }
 }
