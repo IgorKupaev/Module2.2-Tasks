@@ -8,9 +8,11 @@ img {
   pointer-events: none;
 }
 .main {
-  width: 100%;
   min-height: 100vh;
+  width: 100%;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .mainDecoration {
   z-index: -1;
@@ -25,36 +27,37 @@ img {
   width: 100%;
   padding: 40px 30px 40px 30px;
   z-index: 2;
+  flex-grow: 1;
 }
-.mainTitle-block {
+.mainTitleblock {
   max-width: 1062px;
   margin: 0 auto;
 }
-.title-block {
+.titleblock {
   display: flex;
   justify-content: center;
 }
-.title-blockLeft {
+.titleblockLeft {
   flex: 0 0 55%;
   overflow: hidden;
   padding: 15px;
 }
-.title-blockLeft img {
+.titleblockLeft img {
   height: 591px;
   object-position: -20px 0;
 }
-.title-blockLeft-pic {
+.titleblockLeft-pic {
   max-width: 554px;
   max-height: 591px;
   overflow: hidden;
 }
-.title-right {
+.titleright {
   padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.title-rightTitle {
+.titlerightTitle {
   color: rgb(241, 197, 14);
   font-family: Roboto, sans-serif;
   font-size: 60px;
@@ -62,7 +65,7 @@ img {
   line-height: 66px;
   word-wrap: break-word;
 }
-.title-rightDescription {
+.titlerightDescription {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-style: italic;
@@ -70,17 +73,17 @@ img {
   margin-top: 20px;
   color: rgb(255, 255, 255);
 }
-.title-rightPictures {
+.titlerightPictures {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.title-rightPicture {
+.titlerightPicture {
   max-height: 225px;
   width: 209px;
   overflow: hidden;
 }
-.title-rightPicture img {
+.titlerightPicture img {
   width: 100%;
   object-position: 0 -30px;
 }
@@ -88,7 +91,6 @@ img {
   width: 100%;
   background-color: #333333;
 }
-.footerContainer {}
 .footerDescription {
   padding: 49px 15px;
   margin: 0 auto;
@@ -111,43 +113,43 @@ img {
   color: #adcce9;
 }
 @media (max-width: 1199px) {
-  .title-blockLeft {
+  .titleblockLeft {
     flex: 0 0 auto;
     overflow: hidden;
     padding: 15px;
   }
-  .title-blockLeft-pic {
+  .titleblockLeft-pic {
     max-height: 536px;
     max-width: 503px;
   }
-  .title-blockLeft img {
+  .titleblockLeft img {
     height: 536px;
     object-position: -40px 0;
   }
-  .title-rightPicture {
+  .titlerightPicture {
     max-height: 202.5px;
     width: 188.25px;
     overflow: hidden;
   }
-  .title-right {
+  .titleright {
     max-width: 436.5px;
   }
 }
 @media(max-width: 991px) {
-  .title-block {
+  .titleblock {
     flex-direction: column;
     max-width: 750px;
   }
-  .title-blockLeft-pic {
+  .titleblockLeft-pic {
     max-height: 758px;
     max-width: 680px;
     padding: 20px 0;
   }
-  .title-blockLeft img {
+  .titleblockLeft img {
     height: 758px;
     object-position: -40px 0;
   }
-  .title-blockLeft {
+  .titleblockLeft {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -155,62 +157,62 @@ img {
   .mainDecoration {
     height: 1190px;
   }
-  .title-rightPictures {
+  .titlerightPictures {
     margin-top: 40px;
   }
-  .title-rightPicture {
+  .titlerightPicture {
     max-height: 365px;
     width: 345px;
     overflow: hidden;
   }
-  .title-right {
+  .titleright {
     max-width: none;
   }
 }
 @media (max-width: 767px) {
-  .title-block {
+  .titleblock {
     max-width: 570px;
   }
-  .title-blockLeft img {
+  .titleblockLeft img {
     height: 561px;
   }
-  .title-rightPictures {
+  .titlerightPictures {
     flex-direction: column;
   }
-  .title-rightPicture {
+  .titlerightPicture {
     max-height: 563px;
     width: 100%;
     overflow: hidden;
     margin-top: 40px;
   }
-  .title-rightPicture img {
+  .titlerightPicture img {
     object-position: 0 -90px;
   }
-  .title-rightPictures {
+  .titlerightPictures {
     margin-top: 0px;
   }
 }
 @media (max-width: 575px) {
-  .title-block {
+  .titleblock {
     max-width: 370px;
   }
-  .title-blockLeft-pic {
+  .titleblockLeft-pic {
     max-height: 342px;
     max-width: 340px;
   }
-  .title-blockLeft img {
+  .titleblockLeft img {
     height: 342px;
   }
-  .title-rightTitle {
+  .titlerightTitle {
     font-size: 36px;
     line-height: 39.6px
   }
-  .title-rightPicture {
+  .titlerightPicture {
     max-height: 343px;
     width: 100%;
     margin-top: 30px;
   }
-  .title-rightPicture img {
+  .titlerightPicture img {
     object-position: 0 -60px;
   }
   .mainDecoration {
