@@ -112,15 +112,17 @@ img {
 .footerLinks a {
   color: #adcce9;
 }
+.titleblockLeftpic {
+  overflow: hidden;
+}
+
 @media (max-width: 1199px) {
   .titleblockLeft {
-    flex: 0 0 auto;
     overflow: hidden;
     padding: 15px;
   }
-  .titleblockLeft-pic {
-    max-height: 536px;
-    max-width: 503px;
+  .titleblockLeftpic img {
+    width: 594px;
   }
   .titleblockLeft img {
     height: 536px;
@@ -136,6 +138,9 @@ img {
   }
 }
 @media(max-width: 991px) {
+  .titleblockLeftpic img {
+    width: auto;
+  }
   .titleblock {
     flex-direction: column;
     max-width: 750px;
