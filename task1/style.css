@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+}
+.mainContainer {
+  width: 100%;
+}
+.batteriesContainer {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.batteriesBattery:not(:last-child) {
+  margin-bottom: 20px;
+}
+.battery {
+  width: 47vw;
+  height: 16vw;
+  border: 0.95vw solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.battery_red .batteryFuel {
+  background-color: rgb(222, 0, 0);
+  width: 33%;
+}
+.battery_yellow .batteryFuel {
+  background-color: rgb(255, 238, 2);
+  width: 66%;
+}
+.battery_green .batteryFuel {
+  background-color: rgb(0, 156, 10);
+  width: 100%;
+}
+.batteryFuel {
+  height: 100%;
+}
+.batteryItem {
+  height: 5.33vw;
+  width: 2vw;
+  background-color: #000;
+  margin-right: -2.65vw;
+}

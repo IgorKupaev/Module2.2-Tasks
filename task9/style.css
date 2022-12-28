@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+img {
+  pointer-events: none;
+}
+.mainContainer {
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+}
+.mainTitle {
+  font-weight: 700;
+  font-size: 36px;
+  margin: 40px auto 0;
+  font-family: Merriweather, serif;
+  color: rgb(0, 69, 190);
+  text-align: center;
+}
+.mainPicture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 40px auto 0;
+}
+.mainPicture svg {
+  fill: #fff
+}
+.mainPicture img {
+  border-radius: 100%;
+  max-width: 854px;
+  max-height: 854px;
+}
+.mainItems {
+  max-width: 976px;
+  z-index: 2;
+  margin: -289px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mainColumn {
+  background-color: #fff;
+  margin-top: 50px;
+  flex: 0 1 292px;
+  padding: 20px;
+  color: rgb(17, 17, 17);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.088);
+}
+.main-item >*:not(:last-child) {
+  margin-bottom: 20px;
+}
+.main-itemPicture {
+  width: 76px;
+  height: 76px;
+  margin: 20px 0 0;
+  background-color: rgb(0, 69, 190);
+  border-radius: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-itemPicture img {
+  width: 55px;
+}
+.main-itemTitle {
+  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+.main-itemDescription {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+}
+@media (max-width: 991px) {
+  .mainColumn {
+    flex: 0 1 335px;
+    margin-right: 50px;
+  }
+  .mainItems {
+    justify-content: center;
+    margin-top: -150px;
+  }
+  .mainTitle {
+    font-size: 24px;
+  }
+  .mainPicture img {
+    max-width: 714px;
+    max-height: 714px;
+  }
+}
+@media (max-width: 819px) {
+  .mainTitle {
+    max-width: 401px;
+  }
+  .mainPicture img {
+    max-width: 531px;
+    max-height: 531px;
+  }
+  .mainColumn {
+    flex: 0 1 255px;
+    margin-right: 30px;
+  }
+}
+@media (max-width: 639px) {
+  .mainTitle {
+    font-size: 18px;
+    max-width: 320px;
+  }
+  .mainPicture img {
+    max-width: 379px;
+    max-height: 379px;
+  }
+  .mainColumn {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .mainItems {
+    justify-content: center;
+    margin-top: -100px;
+  }
+  .mainColumn {
+    flex: 0 1 340px;
+    margin: 50px 0 0;
+  }
+}

@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(20, 22, 46);
+}
+.mainContainer {
+  width: 100%;
+}
+.price-listItems {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.price-listColumn {
+  background-color: #fff;
+  padding: 15px 15px;
+  flex: 0 0 13vw;
+}
+.price-listColumn:first-child {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+.price-listColumn:last-child {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.price-listColumn:not(:last-child) {
+  border-right: 1px solid rgb(160, 160, 160);
+}
+.price-item >* {
+  text-align: center;
+}
+.price-item >*:not(:last-child) {
+  margin-bottom: 10px;
+}
+.price-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.price-itemPicture {
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+}
+.price-itemImg {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+.price-itemTitle {
+  color: rgb(255, 89, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.price-itemPrice {
+  font-family: monospace;
+  font-size: 14px;
+}
+.price-itemButton button {
+  background-color: rgb(255, 89, 0);
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+.price-itemButton button:hover {
+  background-color: rgb(185, 59, 0);
+}
+@media(max-width: 1124px) {
+  .price-itemTitle {
+    font-size: 15px;
+  }
+  .mounth {
+    display: none;
+  }
+}
+@media (max-width: 420px) {
+  .price-listColumn:first-child {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .price-listColumn:last-child {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 2px;
+  }
+  .price-listColumn:not(:last-child) {
+    border-right: none;
+  }
+  .price-listColumn {
+    background-color: #fff;
+    padding: 15px 15px;
+    margin: 15px 0;
+    flex: 1 1 100%;
+  }
+  .price-itemButton button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .price-itemPrice {
+    font-size: 16px;
+  }
+  .price-itemTitle {
+    font-size: 16px;
+  }
+}

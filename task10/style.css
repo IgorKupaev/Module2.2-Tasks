@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  user-select: none;
+}
+img {
+  pointer-events: none;
+}
+body {
+  background-color: #e5e5e5;
+}
+.main {
+  color: #111111;
+  width: 100%;
+  padding-top: 30px;
+}
+.mainContainer {
+  width: 100%;
+}
+.mainTitleblock {
+  margin: 0px auto;
+}
+.titleblock {
+  max-width: 793px;
+}
+.titleblockTitle {
+  text-align: center;
+  color: rgb(241, 44, 14);
+  font-family: Oswald, sans-serif;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.titleblockDescription {
+  text-align: center;
+  color: rgb(17, 17, 17);
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+.pizzaItems {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pizzaColumn {
+  margin-top: 30px;
+  width: 525px;
+  height: 250px;
+  background-color: #fff;
+  padding: 30px 0 30px 30px;
+}
+.pizzaColumn:first-child {
+  margin-right: 30px;
+}
+.pizzaColumn:nth-child(3) {
+  margin-right: 30px;
+}
+.pizzaitem {
+  display: flex;
+}
+.pizzaitemPicture {
+  max-height: 249px;
+  max-width: 255px;
+  flex: 0 0 50%;
+  overflow: hidden;
+}
+.pizzaitemPicture img {
+  max-height: 269px;
+  vertical-align: center;
+  object-position: -40px -10px;
+  -webkit-user-drag: none;
+}
+.pizzaitemBody {
+  padding: 0 25px;
+  flex: 0 1 50%;
+}
+.pizzaitemBody >* {
+  margin-top: 20px;
+  max-width: 220px;
+}
+.pizzaitemTitle {
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+}
+.pizzaitemDescription {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-size: 16px;
+}
+.pizzaitemPrice {
+  color: rgb(241, 44, 14);
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+.pizzaitemButton button {
+  background-color: rgb(226, 226, 226);
+  color: rgb(17, 17, 17);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all .2s ease;
+  text-transform: uppercase;
+}
+.pizzaitemButton button:hover {
+  background-color: rgb(207, 207, 207);
+}
+.picleft img {
+  object-position: -20px -20px;
+}
+@media (max-width: 1199px) {
+  .pizzaitemPicture {
+    max-height: 249px;
+    flex: 0 0 155px;
+    overflow: hidden;
+  }
+  .pizzaColumn {
+    width: 425px;
+  }
+  .pizzaitemPicture img {
+    object-position: -90px -10px;
+  }
+  .picleft img {
+    object-position: -60px -20px;
+  }
+  .titleblock {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 991px) {
+  .titleblock {
+    max-width: 720px;
+  }
+  .pizzaitemPicture {
+    max-height: 249px;
+    min-width: 300px;
+    overflow: hidden;
+  }
+  .pizzaItems {
+    width: auto;
+  }
+  .pizzaColumn {
+    flex: 0 1 720px;
+  }
+  .pizzaColumn:first-child {
+    margin-top: 30px;
+  }
+  .pizzaitemPicture img {
+    object-position: -40px -20px;
+  }
+  .pizzaitem {
+    justify-content: space-between;
+  }
+  .pizzaitemPicture img {
+    max-height: 300px;
+  }
+  .picleft img {
+    object-position: 0px -20px;
+  }
+  .pizzaColumn:first-child {
+    margin-right: 0px;
+  }
+  .pizzaColumn:nth-child(3) {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 767px) {
+  .titleblock {
+    max-width: 540px;
+  }
+  .pizzaColumn {
+    flex: 0 1 510px;
+  }
+  .pizzaitemPicture {
+    max-height: 249px;
+    min-width: 245px;
+    overflow: hidden;
+  }
+  .pizzaitemPicture img {
+    object-position: -30px -10px;
+    max-height: 249px;
+  }
+}
+@media (max-width: 575px) {
+  .titleblockTitle {
+    font-size: 30px;
+  }
+  .titleblock {
+    width: 340px;
+  }
+  .pizzaitem {
+    flex-direction: column;
+  }
+  .pizzaitemPicture {
+    width: 300px;
+    height: 215px;
+  }
+  .pizzaitemPicture img {
+    object-position: 0 0;
+    width: 290px;
+    height: 220px;
+  }
+  .pizzaColumn {
+    padding: 30px 20px;
+    max-width: 300px;
+    margin-right: 0;
+    height: auto;
+  }
+  .pizzaitemPicture {
+    overflow: visible;
+  }
+  .pizzaitemBody {
+    padding: 0;
+  }
+  .pizzaitemBody >* {
+    max-width: none;
+  }
+  .pizzaitemBody >*:first-child {
+    margin-top: 30px;
+  }
+  .pizzaitemTitle {
+    font-size: 24px;
+  }
+}
